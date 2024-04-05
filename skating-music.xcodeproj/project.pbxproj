@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10770DA22BBF8732007F4792 /* skating_musicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10770DA12BBF8732007F4792 /* skating_musicApp.swift */; };
+		10770DA42BBF8732007F4792 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10770DA32BBF8732007F4792 /* ContentView.swift */; };
+		10770DA62BBF8733007F4792 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10770DA52BBF8733007F4792 /* Assets.xcassets */; };
+		10770DAA2BBF8733007F4792 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10770DA92BBF8733007F4792 /* Preview Assets.xcassets */; };
+		10770DB42BBF8733007F4792 /* skating_musicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10770DB32BBF8733007F4792 /* skating_musicTests.swift */; };
+		10770DBE2BBF8733007F4792 /* skating_musicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10770DBD2BBF8733007F4792 /* skating_musicUITests.swift */; };
+		10770DC02BBF8733007F4792 /* skating_musicUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10770DBF2BBF8733007F4792 /* skating_musicUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		10770DB02BBF8733007F4792 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10770D962BBF8732007F4792 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10770D9D2BBF8732007F4792;
+			remoteInfo = "skating-music";
+		};
+		10770DBA2BBF8733007F4792 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10770D962BBF8732007F4792 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10770D9D2BBF8732007F4792;
+			remoteInfo = "skating-music";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10770D9E2BBF8732007F4792 /* skating-music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "skating-music.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		10770DA12BBF8732007F4792 /* skating_musicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skating_musicApp.swift; sourceTree = "<group>"; };
+		10770DA32BBF8732007F4792 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		10770DA52BBF8733007F4792 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		10770DA72BBF8733007F4792 /* skating_music.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = skating_music.entitlements; sourceTree = "<group>"; };
+		10770DA92BBF8733007F4792 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		10770DAF2BBF8733007F4792 /* skating-musicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "skating-musicTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		10770DB32BBF8733007F4792 /* skating_musicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skating_musicTests.swift; sourceTree = "<group>"; };
+		10770DB92BBF8733007F4792 /* skating-musicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "skating-musicUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		10770DBD2BBF8733007F4792 /* skating_musicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skating_musicUITests.swift; sourceTree = "<group>"; };
+		10770DBF2BBF8733007F4792 /* skating_musicUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skating_musicUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10770D9B2BBF8732007F4792 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10770DAC2BBF8733007F4792 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10770DB62BBF8733007F4792 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10770D952BBF8732007F4792 = {
+			isa = PBXGroup;
+			children = (
+				10770DA02BBF8732007F4792 /* skating-music */,
+				10770DB22BBF8733007F4792 /* skating-musicTests */,
+				10770DBC2BBF8733007F4792 /* skating-musicUITests */,
+				10770D9F2BBF8732007F4792 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		10770D9F2BBF8732007F4792 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				10770D9E2BBF8732007F4792 /* skating-music.app */,
+				10770DAF2BBF8733007F4792 /* skating-musicTests.xctest */,
+				10770DB92BBF8733007F4792 /* skating-musicUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		10770DA02BBF8732007F4792 /* skating-music */ = {
+			isa = PBXGroup;
+			children = (
+				10770DA12BBF8732007F4792 /* skating_musicApp.swift */,
+				10770DA32BBF8732007F4792 /* ContentView.swift */,
+				10770DA52BBF8733007F4792 /* Assets.xcassets */,
+				10770DA72BBF8733007F4792 /* skating_music.entitlements */,
+				10770DA82BBF8733007F4792 /* Preview Content */,
+			);
+			path = "skating-music";
+			sourceTree = "<group>";
+		};
+		10770DA82BBF8733007F4792 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				10770DA92BBF8733007F4792 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		10770DB22BBF8733007F4792 /* skating-musicTests */ = {
+			isa = PBXGroup;
+			children = (
+				10770DB32BBF8733007F4792 /* skating_musicTests.swift */,
+			);
+			path = "skating-musicTests";
+			sourceTree = "<group>";
+		};
+		10770DBC2BBF8733007F4792 /* skating-musicUITests */ = {
+			isa = PBXGroup;
+			children = (
+				10770DBD2BBF8733007F4792 /* skating_musicUITests.swift */,
+				10770DBF2BBF8733007F4792 /* skating_musicUITestsLaunchTests.swift */,
+			);
+			path = "skating-musicUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		10770D9D2BBF8732007F4792 /* skating-music */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10770DC32BBF8733007F4792 /* Build configuration list for PBXNativeTarget "skating-music" */;
+			buildPhases = (
+				10770D9A2BBF8732007F4792 /* Sources */,
+				10770D9B2BBF8732007F4792 /* Frameworks */,
+				10770D9C2BBF8732007F4792 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "skating-music";
+			productName = "skating-music";
+			productReference = 10770D9E2BBF8732007F4792 /* skating-music.app */;
+			productType = "com.apple.product-type.application";
+		};
+		10770DAE2BBF8733007F4792 /* skating-musicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10770DC62BBF8733007F4792 /* Build configuration list for PBXNativeTarget "skating-musicTests" */;
+			buildPhases = (
+				10770DAB2BBF8733007F4792 /* Sources */,
+				10770DAC2BBF8733007F4792 /* Frameworks */,
+				10770DAD2BBF8733007F4792 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10770DB12BBF8733007F4792 /* PBXTargetDependency */,
+			);
+			name = "skating-musicTests";
+			productName = "skating-musicTests";
+			productReference = 10770DAF2BBF8733007F4792 /* skating-musicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		10770DB82BBF8733007F4792 /* skating-musicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10770DC92BBF8733007F4792 /* Build configuration list for PBXNativeTarget "skating-musicUITests" */;
+			buildPhases = (
+				10770DB52BBF8733007F4792 /* Sources */,
+				10770DB62BBF8733007F4792 /* Frameworks */,
+				10770DB72BBF8733007F4792 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10770DBB2BBF8733007F4792 /* PBXTargetDependency */,
+			);
+			name = "skating-musicUITests";
+			productName = "skating-musicUITests";
+			productReference = 10770DB92BBF8733007F4792 /* skating-musicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		10770D962BBF8732007F4792 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					10770D9D2BBF8732007F4792 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					10770DAE2BBF8733007F4792 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 10770D9D2BBF8732007F4792;
+					};
+					10770DB82BBF8733007F4792 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 10770D9D2BBF8732007F4792;
+					};
+				};
+			};
+			buildConfigurationList = 10770D992BBF8732007F4792 /* Build configuration list for PBXProject "skating-music" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 10770D952BBF8732007F4792;
+			productRefGroup = 10770D9F2BBF8732007F4792 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				10770D9D2BBF8732007F4792 /* skating-music */,
+				10770DAE2BBF8733007F4792 /* skating-musicTests */,
+				10770DB82BBF8733007F4792 /* skating-musicUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10770D9C2BBF8732007F4792 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10770DAA2BBF8733007F4792 /* Preview Assets.xcassets in Resources */,
+				10770DA62BBF8733007F4792 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10770DAD2BBF8733007F4792 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10770DB72BBF8733007F4792 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10770D9A2BBF8732007F4792 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10770DA42BBF8732007F4792 /* ContentView.swift in Sources */,
+				10770DA22BBF8732007F4792 /* skating_musicApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10770DAB2BBF8733007F4792 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10770DB42BBF8733007F4792 /* skating_musicTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10770DB52BBF8733007F4792 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10770DC02BBF8733007F4792 /* skating_musicUITestsLaunchTests.swift in Sources */,
+				10770DBE2BBF8733007F4792 /* skating_musicUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		10770DB12BBF8733007F4792 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10770D9D2BBF8732007F4792 /* skating-music */;
+			targetProxy = 10770DB02BBF8733007F4792 /* PBXContainerItemProxy */;
+		};
+		10770DBB2BBF8733007F4792 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10770D9D2BBF8732007F4792 /* skating-music */;
+			targetProxy = 10770DBA2BBF8733007F4792 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10770DC12BBF8733007F4792 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		10770DC22BBF8733007F4792 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		10770DC42BBF8733007F4792 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "skating-music/skating_music.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"skating-music/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tammy.skating-music";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		10770DC52BBF8733007F4792 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "skating-music/skating_music.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"skating-music/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tammy.skating-music";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		10770DC72BBF8733007F4792 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tammy.skating-musicTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/skating-music.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/skating-music";
+			};
+			name = Debug;
+		};
+		10770DC82BBF8733007F4792 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tammy.skating-musicTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/skating-music.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/skating-music";
+			};
+			name = Release;
+		};
+		10770DCA2BBF8733007F4792 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tammy.skating-musicUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "skating-music";
+			};
+			name = Debug;
+		};
+		10770DCB2BBF8733007F4792 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tammy.skating-musicUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "skating-music";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10770D992BBF8732007F4792 /* Build configuration list for PBXProject "skating-music" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10770DC12BBF8733007F4792 /* Debug */,
+				10770DC22BBF8733007F4792 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10770DC32BBF8733007F4792 /* Build configuration list for PBXNativeTarget "skating-music" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10770DC42BBF8733007F4792 /* Debug */,
+				10770DC52BBF8733007F4792 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10770DC62BBF8733007F4792 /* Build configuration list for PBXNativeTarget "skating-musicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10770DC72BBF8733007F4792 /* Debug */,
+				10770DC82BBF8733007F4792 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10770DC92BBF8733007F4792 /* Build configuration list for PBXNativeTarget "skating-musicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10770DCA2BBF8733007F4792 /* Debug */,
+				10770DCB2BBF8733007F4792 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 10770D962BBF8732007F4792 /* Project object */;
+}
