@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  skating-music
+//  SkatingMusic
 //
 //  Created by Tammy Liu on 4/4/24.
 //

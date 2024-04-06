@@ -1,6 +1,6 @@
 //
-//  skating_musicTests.swift
-//  skating-musicTests
+//  SkatingMusicTests.swift
+//  SkatingMusicTests
 //
 //  Created by Tammy Liu on 4/4/24.
 //

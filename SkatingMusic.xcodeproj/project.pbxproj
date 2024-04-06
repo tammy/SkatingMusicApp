@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		10770DA22BBF8732007F4792 /* skating_musicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10770DA12BBF8732007F4792 /* skating_musicApp.swift */; };
+		10770DA22BBF8732007F4792 /* SkatingMusicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10770DA12BBF8732007F4792 /* SkatingMusicApp.swift */; };
 		10770DA42BBF8732007F4792 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10770DA32BBF8732007F4792 /* ContentView.swift */; };
 		10770DA62BBF8733007F4792 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10770DA52BBF8733007F4792 /* Assets.xcassets */; };
 		10770DAA2BBF8733007F4792 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10770DA92BBF8733007F4792 /* Preview Assets.xcassets */; };
-		10770DB42BBF8733007F4792 /* skating_musicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10770DB32BBF8733007F4792 /* skating_musicTests.swift */; };
-		10770DBE2BBF8733007F4792 /* skating_musicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10770DBD2BBF8733007F4792 /* skating_musicUITests.swift */; };
-		10770DC02BBF8733007F4792 /* skating_musicUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10770DBF2BBF8733007F4792 /* skating_musicUITestsLaunchTests.swift */; };
+		10770DB42BBF8733007F4792 /* SkatingMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10770DB32BBF8733007F4792 /* SkatingMusicTests.swift */; };
+		10770DBE2BBF8733007F4792 /* SkatingMusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10770DBD2BBF8733007F4792 /* SkatingMusicUITests.swift */; };
+		10770DC02BBF8733007F4792 /* SkatingMusicUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10770DBF2BBF8733007F4792 /* SkatingMusicUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,17 +34,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		10770D9E2BBF8732007F4792 /* skating-music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "skating-music.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		10770DA12BBF8732007F4792 /* skating_musicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skating_musicApp.swift; sourceTree = "<group>"; };
+		10770D9E2BBF8732007F4792 /* SkatingMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkatingMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10770DA12BBF8732007F4792 /* SkatingMusicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkatingMusicApp.swift; sourceTree = "<group>"; };
 		10770DA32BBF8732007F4792 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		10770DA52BBF8733007F4792 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		10770DA72BBF8733007F4792 /* skating_music.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = skating_music.entitlements; sourceTree = "<group>"; };
+		10770DA72BBF8733007F4792 /* SkatingMusic.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SkatingMusic.entitlements; sourceTree = "<group>"; };
 		10770DA92BBF8733007F4792 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		10770DAF2BBF8733007F4792 /* skating-musicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "skating-musicTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		10770DB32BBF8733007F4792 /* skating_musicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skating_musicTests.swift; sourceTree = "<group>"; };
-		10770DB92BBF8733007F4792 /* skating-musicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "skating-musicUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		10770DBD2BBF8733007F4792 /* skating_musicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skating_musicUITests.swift; sourceTree = "<group>"; };
-		10770DBF2BBF8733007F4792 /* skating_musicUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skating_musicUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		10770DAF2BBF8733007F4792 /* SkatingMusicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkatingMusicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10770DB32BBF8733007F4792 /* SkatingMusicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkatingMusicTests.swift; sourceTree = "<group>"; };
+		10770DB92BBF8733007F4792 /* SkatingMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkatingMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10770DBD2BBF8733007F4792 /* SkatingMusicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkatingMusicUITests.swift; sourceTree = "<group>"; };
+		10770DBF2BBF8733007F4792 /* SkatingMusicUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkatingMusicUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,33 +75,34 @@
 		10770D952BBF8732007F4792 = {
 			isa = PBXGroup;
 			children = (
-				10770DA02BBF8732007F4792 /* skating-music */,
-				10770DB22BBF8733007F4792 /* skating-musicTests */,
-				10770DBC2BBF8733007F4792 /* skating-musicUITests */,
+				10770DA02BBF8732007F4792 /* SkatingMusic */,
+				10770DB22BBF8733007F4792 /* SkatingMusicTests */,
+				10770DBC2BBF8733007F4792 /* SkatingMusicUITests */,
 				10770D9F2BBF8732007F4792 /* Products */,
 			);
 			sourceTree = "<group>";
+			wrapsLines = 1;
 		};
 		10770D9F2BBF8732007F4792 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				10770D9E2BBF8732007F4792 /* skating-music.app */,
-				10770DAF2BBF8733007F4792 /* skating-musicTests.xctest */,
-				10770DB92BBF8733007F4792 /* skating-musicUITests.xctest */,
+				10770D9E2BBF8732007F4792 /* SkatingMusic.app */,
+				10770DAF2BBF8733007F4792 /* SkatingMusicTests.xctest */,
+				10770DB92BBF8733007F4792 /* SkatingMusicUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		10770DA02BBF8732007F4792 /* skating-music */ = {
+		10770DA02BBF8732007F4792 /* SkatingMusic */ = {
 			isa = PBXGroup;
 			children = (
-				10770DA12BBF8732007F4792 /* skating_musicApp.swift */,
+				10770DA12BBF8732007F4792 /* SkatingMusicApp.swift */,
 				10770DA32BBF8732007F4792 /* ContentView.swift */,
 				10770DA52BBF8733007F4792 /* Assets.xcassets */,
-				10770DA72BBF8733007F4792 /* skating_music.entitlements */,
+				10770DA72BBF8733007F4792 /* SkatingMusic.entitlements */,
 				10770DA82BBF8733007F4792 /* Preview Content */,
 			);
-			path = "skating-music";
+			path = SkatingMusic;
 			sourceTree = "<group>";
 		};
 		10770DA82BBF8733007F4792 /* Preview Content */ = {
@@ -112,29 +113,29 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		10770DB22BBF8733007F4792 /* skating-musicTests */ = {
+		10770DB22BBF8733007F4792 /* SkatingMusicTests */ = {
 			isa = PBXGroup;
 			children = (
-				10770DB32BBF8733007F4792 /* skating_musicTests.swift */,
+				10770DB32BBF8733007F4792 /* SkatingMusicTests.swift */,
 			);
-			path = "skating-musicTests";
+			path = SkatingMusicTests;
 			sourceTree = "<group>";
 		};
-		10770DBC2BBF8733007F4792 /* skating-musicUITests */ = {
+		10770DBC2BBF8733007F4792 /* SkatingMusicUITests */ = {
 			isa = PBXGroup;
 			children = (
-				10770DBD2BBF8733007F4792 /* skating_musicUITests.swift */,
-				10770DBF2BBF8733007F4792 /* skating_musicUITestsLaunchTests.swift */,
+				10770DBD2BBF8733007F4792 /* SkatingMusicUITests.swift */,
+				10770DBF2BBF8733007F4792 /* SkatingMusicUITestsLaunchTests.swift */,
 			);
-			path = "skating-musicUITests";
+			path = SkatingMusicUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		10770D9D2BBF8732007F4792 /* skating-music */ = {
+		10770D9D2BBF8732007F4792 /* SkatingMusic */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 10770DC32BBF8733007F4792 /* Build configuration list for PBXNativeTarget "skating-music" */;
+			buildConfigurationList = 10770DC32BBF8733007F4792 /* Build configuration list for PBXNativeTarget "SkatingMusic" */;
 			buildPhases = (
 				10770D9A2BBF8732007F4792 /* Sources */,
 				10770D9B2BBF8732007F4792 /* Frameworks */,
@@ -144,14 +145,14 @@
 			);
 			dependencies = (
 			);
-			name = "skating-music";
+			name = SkatingMusic;
 			productName = "skating-music";
-			productReference = 10770D9E2BBF8732007F4792 /* skating-music.app */;
+			productReference = 10770D9E2BBF8732007F4792 /* SkatingMusic.app */;
 			productType = "com.apple.product-type.application";
 		};
-		10770DAE2BBF8733007F4792 /* skating-musicTests */ = {
+		10770DAE2BBF8733007F4792 /* SkatingMusicTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 10770DC62BBF8733007F4792 /* Build configuration list for PBXNativeTarget "skating-musicTests" */;
+			buildConfigurationList = 10770DC62BBF8733007F4792 /* Build configuration list for PBXNativeTarget "SkatingMusicTests" */;
 			buildPhases = (
 				10770DAB2BBF8733007F4792 /* Sources */,
 				10770DAC2BBF8733007F4792 /* Frameworks */,
@@ -162,14 +163,14 @@
 			dependencies = (
 				10770DB12BBF8733007F4792 /* PBXTargetDependency */,
 			);
-			name = "skating-musicTests";
+			name = SkatingMusicTests;
 			productName = "skating-musicTests";
-			productReference = 10770DAF2BBF8733007F4792 /* skating-musicTests.xctest */;
+			productReference = 10770DAF2BBF8733007F4792 /* SkatingMusicTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		10770DB82BBF8733007F4792 /* skating-musicUITests */ = {
+		10770DB82BBF8733007F4792 /* SkatingMusicUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 10770DC92BBF8733007F4792 /* Build configuration list for PBXNativeTarget "skating-musicUITests" */;
+			buildConfigurationList = 10770DC92BBF8733007F4792 /* Build configuration list for PBXNativeTarget "SkatingMusicUITests" */;
 			buildPhases = (
 				10770DB52BBF8733007F4792 /* Sources */,
 				10770DB62BBF8733007F4792 /* Frameworks */,
@@ -180,9 +181,9 @@
 			dependencies = (
 				10770DBB2BBF8733007F4792 /* PBXTargetDependency */,
 			);
-			name = "skating-musicUITests";
+			name = SkatingMusicUITests;
 			productName = "skating-musicUITests";
-			productReference = 10770DB92BBF8733007F4792 /* skating-musicUITests.xctest */;
+			productReference = 10770DB92BBF8733007F4792 /* SkatingMusicUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -208,7 +209,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 10770D992BBF8732007F4792 /* Build configuration list for PBXProject "skating-music" */;
+			buildConfigurationList = 10770D992BBF8732007F4792 /* Build configuration list for PBXProject "SkatingMusic" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -221,9 +222,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				10770D9D2BBF8732007F4792 /* skating-music */,
-				10770DAE2BBF8733007F4792 /* skating-musicTests */,
-				10770DB82BBF8733007F4792 /* skating-musicUITests */,
+				10770D9D2BBF8732007F4792 /* SkatingMusic */,
+				10770DAE2BBF8733007F4792 /* SkatingMusicTests */,
+				10770DB82BBF8733007F4792 /* SkatingMusicUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -260,7 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10770DA42BBF8732007F4792 /* ContentView.swift in Sources */,
-				10770DA22BBF8732007F4792 /* skating_musicApp.swift in Sources */,
+				10770DA22BBF8732007F4792 /* SkatingMusicApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10770DB42BBF8733007F4792 /* skating_musicTests.swift in Sources */,
+				10770DB42BBF8733007F4792 /* SkatingMusicTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +277,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10770DC02BBF8733007F4792 /* skating_musicUITestsLaunchTests.swift in Sources */,
-				10770DBE2BBF8733007F4792 /* skating_musicUITests.swift in Sources */,
+				10770DC02BBF8733007F4792 /* SkatingMusicUITestsLaunchTests.swift in Sources */,
+				10770DBE2BBF8733007F4792 /* SkatingMusicUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,12 +287,12 @@
 /* Begin PBXTargetDependency section */
 		10770DB12BBF8733007F4792 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 10770D9D2BBF8732007F4792 /* skating-music */;
+			target = 10770D9D2BBF8732007F4792 /* SkatingMusic */;
 			targetProxy = 10770DB02BBF8733007F4792 /* PBXContainerItemProxy */;
 		};
 		10770DBB2BBF8733007F4792 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 10770D9D2BBF8732007F4792 /* skating-music */;
+			target = 10770D9D2BBF8732007F4792 /* SkatingMusic */;
 			targetProxy = 10770DBA2BBF8733007F4792 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -440,10 +441,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "tammy.skating-music";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -476,10 +478,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "tammy.skating-music";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -501,7 +504,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/skating-music.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/skating-music";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkatingMusic.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SkatingMusic";
 			};
 			name = Debug;
 		};
@@ -523,7 +526,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/skating-music.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/skating-music";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkatingMusic.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SkatingMusic";
 			};
 			name = Release;
 		};
@@ -572,7 +575,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		10770D992BBF8732007F4792 /* Build configuration list for PBXProject "skating-music" */ = {
+		10770D992BBF8732007F4792 /* Build configuration list for PBXProject "SkatingMusic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				10770DC12BBF8733007F4792 /* Debug */,
@@ -581,7 +584,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		10770DC32BBF8733007F4792 /* Build configuration list for PBXNativeTarget "skating-music" */ = {
+		10770DC32BBF8733007F4792 /* Build configuration list for PBXNativeTarget "SkatingMusic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				10770DC42BBF8733007F4792 /* Debug */,
@@ -590,7 +593,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		10770DC62BBF8733007F4792 /* Build configuration list for PBXNativeTarget "skating-musicTests" */ = {
+		10770DC62BBF8733007F4792 /* Build configuration list for PBXNativeTarget "SkatingMusicTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				10770DC72BBF8733007F4792 /* Debug */,
@@ -599,7 +602,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		10770DC92BBF8733007F4792 /* Build configuration list for PBXNativeTarget "skating-musicUITests" */ = {
+		10770DC92BBF8733007F4792 /* Build configuration list for PBXNativeTarget "SkatingMusicUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				10770DCA2BBF8733007F4792 /* Debug */,
