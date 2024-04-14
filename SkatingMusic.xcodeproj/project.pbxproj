@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		102F02832BCA4113009D7219 /* ProgramDetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102F02822BCA4113009D7219 /* ProgramDetailEditView.swift */; };
+		102F02852BCB597E009D7219 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102F02842BCB597E009D7219 /* ThemeView.swift */; };
+		102F02872BCB5A26009D7219 /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102F02862BCB5A26009D7219 /* ThemePicker.swift */; };
 		10770DA22BBF8732007F4792 /* SkatingMusicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10770DA12BBF8732007F4792 /* SkatingMusicApp.swift */; };
-		10770DA42BBF8732007F4792 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10770DA32BBF8732007F4792 /* ContentView.swift */; };
+		10770DA42BBF8732007F4792 /* MusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10770DA32BBF8732007F4792 /* MusicView.swift */; };
 		10770DA62BBF8733007F4792 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10770DA52BBF8733007F4792 /* Assets.xcassets */; };
 		10770DAA2BBF8733007F4792 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10770DA92BBF8733007F4792 /* Preview Assets.xcassets */; };
 		10770DB42BBF8733007F4792 /* SkatingMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10770DB32BBF8733007F4792 /* SkatingMusicTests.swift */; };
 		10770DBE2BBF8733007F4792 /* SkatingMusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10770DBD2BBF8733007F4792 /* SkatingMusicUITests.swift */; };
 		10770DC02BBF8733007F4792 /* SkatingMusicUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10770DBF2BBF8733007F4792 /* SkatingMusicUITestsLaunchTests.swift */; };
+		10770DCE2BC24574007F4792 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10770DCD2BC24574007F4792 /* Theme.swift */; };
+		10770DD02BC245D5007F4792 /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10770DCF2BC245D5007F4792 /* Program.swift */; };
+		10770DD22BC24712007F4792 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10770DD12BC24712007F4792 /* CardView.swift */; };
+		10770DD42BC64933007F4792 /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10770DD32BC64933007F4792 /* TrailingIconLabelStyle.swift */; };
+		10770DD62BC64A58007F4792 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10770DD52BC64A58007F4792 /* ListView.swift */; };
+		10A23C322BC783FD00625906 /* ProgramDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A23C312BC783FD00625906 /* ProgramDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		102F02822BCA4113009D7219 /* ProgramDetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramDetailEditView.swift; sourceTree = "<group>"; };
+		102F02842BCB597E009D7219 /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
+		102F02862BCB5A26009D7219 /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
 		10770D9E2BBF8732007F4792 /* SkatingMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkatingMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10770DA12BBF8732007F4792 /* SkatingMusicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkatingMusicApp.swift; sourceTree = "<group>"; };
-		10770DA32BBF8732007F4792 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		10770DA32BBF8732007F4792 /* MusicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicView.swift; sourceTree = "<group>"; };
 		10770DA52BBF8733007F4792 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10770DA72BBF8733007F4792 /* SkatingMusic.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SkatingMusic.entitlements; sourceTree = "<group>"; };
 		10770DA92BBF8733007F4792 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +57,12 @@
 		10770DB92BBF8733007F4792 /* SkatingMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkatingMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10770DBD2BBF8733007F4792 /* SkatingMusicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkatingMusicUITests.swift; sourceTree = "<group>"; };
 		10770DBF2BBF8733007F4792 /* SkatingMusicUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkatingMusicUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		10770DCD2BC24574007F4792 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		10770DCF2BC245D5007F4792 /* Program.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
+		10770DD12BC24712007F4792 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		10770DD32BC64933007F4792 /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
+		10770DD52BC64A58007F4792 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		10A23C312BC783FD00625906 /* ProgramDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +114,12 @@
 		10770DA02BBF8732007F4792 /* SkatingMusic */ = {
 			isa = PBXGroup;
 			children = (
-				10770DA12BBF8732007F4792 /* SkatingMusicApp.swift */,
-				10770DA32BBF8732007F4792 /* ContentView.swift */,
 				10770DA52BBF8733007F4792 /* Assets.xcassets */,
+				10770DCD2BC24574007F4792 /* Theme.swift */,
+				10770DD32BC64933007F4792 /* TrailingIconLabelStyle.swift */,
+				10770DD72BC781B4007F4792 /* Views */,
+				10770DCC2BC2455F007F4792 /* Models */,
+				10770DA12BBF8732007F4792 /* SkatingMusicApp.swift */,
 				10770DA72BBF8733007F4792 /* SkatingMusic.entitlements */,
 				10770DA82BBF8733007F4792 /* Preview Content */,
 			);
@@ -128,6 +149,28 @@
 				10770DBF2BBF8733007F4792 /* SkatingMusicUITestsLaunchTests.swift */,
 			);
 			path = SkatingMusicUITests;
+			sourceTree = "<group>";
+		};
+		10770DCC2BC2455F007F4792 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				10770DCF2BC245D5007F4792 /* Program.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		10770DD72BC781B4007F4792 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				10770DA32BBF8732007F4792 /* MusicView.swift */,
+				10770DD12BC24712007F4792 /* CardView.swift */,
+				10770DD52BC64A58007F4792 /* ListView.swift */,
+				10A23C312BC783FD00625906 /* ProgramDetailView.swift */,
+				102F02822BCA4113009D7219 /* ProgramDetailEditView.swift */,
+				102F02842BCB597E009D7219 /* ThemeView.swift */,
+				102F02862BCB5A26009D7219 /* ThemePicker.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,8 +303,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10770DA42BBF8732007F4792 /* ContentView.swift in Sources */,
+				102F02872BCB5A26009D7219 /* ThemePicker.swift in Sources */,
+				10A23C322BC783FD00625906 /* ProgramDetailView.swift in Sources */,
+				10770DCE2BC24574007F4792 /* Theme.swift in Sources */,
+				102F02832BCA4113009D7219 /* ProgramDetailEditView.swift in Sources */,
+				10770DD42BC64933007F4792 /* TrailingIconLabelStyle.swift in Sources */,
+				10770DA42BBF8732007F4792 /* MusicView.swift in Sources */,
+				10770DD62BC64A58007F4792 /* ListView.swift in Sources */,
 				10770DA22BBF8732007F4792 /* SkatingMusicApp.swift in Sources */,
+				10770DD02BC245D5007F4792 /* Program.swift in Sources */,
+				102F02852BCB597E009D7219 /* ThemeView.swift in Sources */,
+				10770DD22BC24712007F4792 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,10 +469,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "skating-music/skating_music.entitlements";
+				CODE_SIGN_ENTITLEMENTS = SkatingMusic/SkatingMusic.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"skating-music/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SkatingMusic/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -454,10 +506,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "skating-music/skating_music.entitlements";
+				CODE_SIGN_ENTITLEMENTS = SkatingMusic/SkatingMusic.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"skating-music/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SkatingMusic/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;

@@ -8,10 +8,12 @@
 import SwiftUI
 
 @main
-struct skating_musicApp: App {
+struct SkatingMusicApp: App {
+    @State private var programs = Program.sampleData
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ListView(programs: $programs)
         }
     }
 }
