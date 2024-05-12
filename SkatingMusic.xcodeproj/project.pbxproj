@@ -10,6 +10,15 @@
 		102F02832BCA4113009D7219 /* ProgramDetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102F02822BCA4113009D7219 /* ProgramDetailEditView.swift */; };
 		102F02852BCB597E009D7219 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102F02842BCB597E009D7219 /* ThemeView.swift */; };
 		102F02872BCB5A26009D7219 /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102F02862BCB5A26009D7219 /* ThemePicker.swift */; };
+		102F02892BCB7DBF009D7219 /* MusicProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102F02882BCB7DBF009D7219 /* MusicProgressView.swift */; };
+		102F028B2BCB7F8D009D7219 /* MusicProgressViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102F028A2BCB7F8D009D7219 /* MusicProgressViewStyle.swift */; };
+		102F028F2BCB80F6009D7219 /* MusicTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102F028E2BCB80F6009D7219 /* MusicTimer.swift */; };
+		102F02912BCB8EA6009D7219 /* MusicControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102F02902BCB8EA6009D7219 /* MusicControlView.swift */; };
+		102F02932BCB983B009D7219 /* AVPlayer+Ding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102F02922BCB983B009D7219 /* AVPlayer+Ding.swift */; };
+		102F02962BCB98BB009D7219 /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 102F02942BCB98BB009D7219 /* ding.wav */; };
+		102F02982BCC9130009D7219 /* NewProgramSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102F02972BCC9130009D7219 /* NewProgramSheet.swift */; };
+		102F029A2BCC943F009D7219 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102F02992BCC943F009D7219 /* History.swift */; };
+		102F029C2BCCC5D4009D7219 /* ProgramStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102F029B2BCCC5D4009D7219 /* ProgramStore.swift */; };
 		10770DA22BBF8732007F4792 /* SkatingMusicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10770DA12BBF8732007F4792 /* SkatingMusicApp.swift */; };
 		10770DA42BBF8732007F4792 /* MusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10770DA32BBF8732007F4792 /* MusicView.swift */; };
 		10770DA62BBF8733007F4792 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10770DA52BBF8733007F4792 /* Assets.xcassets */; };
@@ -21,7 +30,7 @@
 		10770DD02BC245D5007F4792 /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10770DCF2BC245D5007F4792 /* Program.swift */; };
 		10770DD22BC24712007F4792 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10770DD12BC24712007F4792 /* CardView.swift */; };
 		10770DD42BC64933007F4792 /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10770DD32BC64933007F4792 /* TrailingIconLabelStyle.swift */; };
-		10770DD62BC64A58007F4792 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10770DD52BC64A58007F4792 /* ListView.swift */; };
+		10770DD62BC64A58007F4792 /* ProgramListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10770DD52BC64A58007F4792 /* ProgramListView.swift */; };
 		10A23C322BC783FD00625906 /* ProgramDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A23C312BC783FD00625906 /* ProgramDetailView.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +55,15 @@
 		102F02822BCA4113009D7219 /* ProgramDetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramDetailEditView.swift; sourceTree = "<group>"; };
 		102F02842BCB597E009D7219 /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
 		102F02862BCB5A26009D7219 /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
+		102F02882BCB7DBF009D7219 /* MusicProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicProgressView.swift; sourceTree = "<group>"; };
+		102F028A2BCB7F8D009D7219 /* MusicProgressViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicProgressViewStyle.swift; sourceTree = "<group>"; };
+		102F028E2BCB80F6009D7219 /* MusicTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTimer.swift; sourceTree = "<group>"; };
+		102F02902BCB8EA6009D7219 /* MusicControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicControlView.swift; sourceTree = "<group>"; };
+		102F02922BCB983B009D7219 /* AVPlayer+Ding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "AVPlayer+Ding.swift"; path = "../../../../Downloads/ManagingStateAndLifeCycle/Complete/Scrumdinger/Models/AVPlayer+Ding.swift"; sourceTree = "<group>"; };
+		102F02942BCB98BB009D7219 /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
+		102F02972BCC9130009D7219 /* NewProgramSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProgramSheet.swift; sourceTree = "<group>"; };
+		102F02992BCC943F009D7219 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		102F029B2BCCC5D4009D7219 /* ProgramStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramStore.swift; sourceTree = "<group>"; };
 		10770D9E2BBF8732007F4792 /* SkatingMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkatingMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10770DA12BBF8732007F4792 /* SkatingMusicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkatingMusicApp.swift; sourceTree = "<group>"; };
 		10770DA32BBF8732007F4792 /* MusicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicView.swift; sourceTree = "<group>"; };
@@ -61,7 +79,7 @@
 		10770DCF2BC245D5007F4792 /* Program.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
 		10770DD12BC24712007F4792 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		10770DD32BC64933007F4792 /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
-		10770DD52BC64A58007F4792 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		10770DD52BC64A58007F4792 /* ProgramListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramListView.swift; sourceTree = "<group>"; };
 		10A23C312BC783FD00625906 /* ProgramDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +108,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		102F02952BCB98BB009D7219 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				102F02942BCB98BB009D7219 /* ding.wav */,
+			);
+			name = Resources;
+			path = ../../../Downloads/ManagingStateAndLifeCycle/Complete/Scrumdinger/Resources;
+			sourceTree = "<group>";
+		};
 		10770D952BBF8732007F4792 = {
 			isa = PBXGroup;
 			children = (
@@ -114,9 +141,8 @@
 		10770DA02BBF8732007F4792 /* SkatingMusic */ = {
 			isa = PBXGroup;
 			children = (
+				102F02952BCB98BB009D7219 /* Resources */,
 				10770DA52BBF8733007F4792 /* Assets.xcassets */,
-				10770DCD2BC24574007F4792 /* Theme.swift */,
-				10770DD32BC64933007F4792 /* TrailingIconLabelStyle.swift */,
 				10770DD72BC781B4007F4792 /* Views */,
 				10770DCC2BC2455F007F4792 /* Models */,
 				10770DA12BBF8732007F4792 /* SkatingMusicApp.swift */,
@@ -154,7 +180,12 @@
 		10770DCC2BC2455F007F4792 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				102F02922BCB983B009D7219 /* AVPlayer+Ding.swift */,
+				10770DCD2BC24574007F4792 /* Theme.swift */,
 				10770DCF2BC245D5007F4792 /* Program.swift */,
+				102F028E2BCB80F6009D7219 /* MusicTimer.swift */,
+				102F02992BCC943F009D7219 /* History.swift */,
+				102F029B2BCCC5D4009D7219 /* ProgramStore.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -162,13 +193,18 @@
 		10770DD72BC781B4007F4792 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				10770DD32BC64933007F4792 /* TrailingIconLabelStyle.swift */,
 				10770DA32BBF8732007F4792 /* MusicView.swift */,
+				102F02902BCB8EA6009D7219 /* MusicControlView.swift */,
 				10770DD12BC24712007F4792 /* CardView.swift */,
-				10770DD52BC64A58007F4792 /* ListView.swift */,
+				10770DD52BC64A58007F4792 /* ProgramListView.swift */,
 				10A23C312BC783FD00625906 /* ProgramDetailView.swift */,
 				102F02822BCA4113009D7219 /* ProgramDetailEditView.swift */,
 				102F02842BCB597E009D7219 /* ThemeView.swift */,
 				102F02862BCB5A26009D7219 /* ThemePicker.swift */,
+				102F02882BCB7DBF009D7219 /* MusicProgressView.swift */,
+				102F028A2BCB7F8D009D7219 /* MusicProgressViewStyle.swift */,
+				102F02972BCC9130009D7219 /* NewProgramSheet.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -277,6 +313,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				102F02962BCB98BB009D7219 /* ding.wav in Resources */,
 				10770DAA2BBF8733007F4792 /* Preview Assets.xcassets in Resources */,
 				10770DA62BBF8733007F4792 /* Assets.xcassets in Resources */,
 			);
@@ -303,17 +340,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				102F029C2BCCC5D4009D7219 /* ProgramStore.swift in Sources */,
+				102F029A2BCC943F009D7219 /* History.swift in Sources */,
 				102F02872BCB5A26009D7219 /* ThemePicker.swift in Sources */,
+				102F02912BCB8EA6009D7219 /* MusicControlView.swift in Sources */,
 				10A23C322BC783FD00625906 /* ProgramDetailView.swift in Sources */,
+				102F028B2BCB7F8D009D7219 /* MusicProgressViewStyle.swift in Sources */,
 				10770DCE2BC24574007F4792 /* Theme.swift in Sources */,
+				102F02982BCC9130009D7219 /* NewProgramSheet.swift in Sources */,
 				102F02832BCA4113009D7219 /* ProgramDetailEditView.swift in Sources */,
 				10770DD42BC64933007F4792 /* TrailingIconLabelStyle.swift in Sources */,
 				10770DA42BBF8732007F4792 /* MusicView.swift in Sources */,
-				10770DD62BC64A58007F4792 /* ListView.swift in Sources */,
+				10770DD62BC64A58007F4792 /* ProgramListView.swift in Sources */,
 				10770DA22BBF8732007F4792 /* SkatingMusicApp.swift in Sources */,
 				10770DD02BC245D5007F4792 /* Program.swift in Sources */,
+				102F02892BCB7DBF009D7219 /* MusicProgressView.swift in Sources */,
+				102F028F2BCB80F6009D7219 /* MusicTimer.swift in Sources */,
 				102F02852BCB597E009D7219 /* ThemeView.swift in Sources */,
 				10770DD22BC24712007F4792 /* CardView.swift in Sources */,
+				102F02932BCB983B009D7219 /* AVPlayer+Ding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +518,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SkatingMusic/Preview Content\"";
+				DEVELOPMENT_TEAM = 6PBAY4H34H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -510,6 +556,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SkatingMusic/Preview Content\"";
+				DEVELOPMENT_TEAM = 6PBAY4H34H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;

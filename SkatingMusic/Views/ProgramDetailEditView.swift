@@ -14,9 +14,10 @@ struct ProgramDetailEditView: View {
         Form {
             Section(header: Text("Program info")) {
                 TextField("Title", text: $program.title)
-                TextField("Program level", text: $program.level)
+                TextField("Program level", text: $program.label)
                 
                 HStack{
+                    Text("Music lead in")
                     Slider(value: $program.leadInSecondsAsDouble, in: 1...30, step: 1) {
                         Text("Length")
                     }
@@ -24,6 +25,7 @@ struct ProgramDetailEditView: View {
                     Text("\(program.leadInSeconds) seconds")
                         .accessibilityHidden(true)
                 }
+                ThemePicker(selection: $program.theme)
             }
         }
     }

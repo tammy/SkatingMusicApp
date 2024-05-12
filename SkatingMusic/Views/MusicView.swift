@@ -6,49 +6,67 @@
 //
 
 import SwiftUI
-
-// TODO: add options for delay (metronome, silence, music extension?)
-// TODO: add categories/tags for level (eg. adult pre-bronze, bronze, lyrical, etc)
+import AVFoundation
 
 struct MusicView: View {
-    let program: Program
+    @Binding var program: Program
+    @StateObject var musicTimer = MusicTimer()
+    
+    @State private var isPlaying = true
+    private var player: AVPlayer { AVPlayer.sharedDingPlayer }
     
     var body: some View {
-        VStack {
-            ProgressView(value: 10, total: 15)
-            HStack{
-                VStack {
-                    Text("Seconds elapsed").font(.caption)
-                    Label("300", systemImage: "hourglass.tophalf.fill")
-                }
-                Spacer()
-                VStack {
-                    Text("Seconds remaining").font(.caption)
-                    Label("600", systemImage: "hourglass.bottomhalf.fill")
-                }
-            }
-            .accessibilityElement(children: .ignore)
-            .accessibilityLabel("Time remaining")
-            .accessibilityValue("10 minutes")
-            Circle().strokeBorder(lineWidth: 24)
-            HStack {
-                Text("Speaker 1 of 3")
-                Spacer()
-                Button(action: {}) {
-                    Image(systemName: "forward.fill")
-                }
-                .accessibilityLabel("Next speaker")
+        ZStack {
+            RoundedRectangle(cornerRadius: 16.0)
+                .fill(program.theme.mainColor)
+            VStack {
+                Circle().strokeBorder(lineWidth: 24)
+                MusicProgressView(secondsElapsed: musicTimer.secondsElapsed, secondsRemaining: musicTimer.secondsRemaining, theme: program.theme)
+                MusicControlView(isPlaying: isPlaying, playAction: playMusic, pauseAction: pauseMusic)
             }
         }
-        .navigationBarTitle(program.title)
         .padding()
+        .foregroundColor(program.theme.accentColor)
+        .onAppear {
+            startProgram()
+        }
+        .onDisappear {
+            endProgram()
+        }
+        .navigationBarTitle(program.title)
+        .navigationBarTitleDisplayMode(.inline)
+    }
+    
+    private func playMusic() {
+        isPlaying = true
+        musicTimer.startMusic()
+    }
+    
+    private func pauseMusic() {
+        isPlaying = false
+        musicTimer.stopMusic()
+    }
+    
+    private func startProgram() {
+        musicTimer.reset(lengthInSeconds: program.leadInSeconds)
+        musicTimer.secondPassedAction = {
+            player.seek(to: .zero)
+            player.play()
+        }
+        playMusic()
+    }
+    
+    private func endProgram() {
+        pauseMusic()
+        let newHistory = History()
+        program.history.insert(newHistory, at: 0)
     }
 }
 
 struct MusicView_Preview: PreviewProvider {
     static var previews: some View {
         NavigationStack {
-            MusicView(program: Program.sampleData[0])
+            MusicView(program: .constant(Program.sampleData[0]))
         }
     }
 }

@@ -19,7 +19,7 @@ struct ProgramDetailView: View {
                 HStack {
                     Label("Level", systemImage: "plus")
                     Spacer()
-                    Text("\(program.level)")
+                    Text("\(program.label)")
                 }
                 HStack {
                     Label("Duration", systemImage: "clock")
@@ -47,10 +47,22 @@ struct ProgramDetailView: View {
                     Spacer()
                     Text("\(program.leadInSeconds) seconds")
                 }
-                NavigationLink(destination: MusicView(program: program)) {
+                NavigationLink(destination: MusicView(program: $program)) {
                     Label("Start music", systemImage: "play")
                         .font(.headline)
                         .foregroundColor(.accentColor)
+                }
+            }
+            
+            Section(header: Text("History")) {
+                if program.history.isEmpty {
+                    Label("No history yet", systemImage: "calendar.badge.exclamationmark")
+                }
+                ForEach(program.history) { history in
+                    HStack {
+                        Image(systemName: "calendar")
+                        Text(history.date, style: .date)
+                    }
                 }
             }
         }

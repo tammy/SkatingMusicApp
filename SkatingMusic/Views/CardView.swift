@@ -20,7 +20,7 @@ struct CardView: View {
                     .accessibilityAddTraits(.isHeader)
             }
             HStack {
-                Text(program.level)
+                Text(program.label)
                     .font(.subheadline)
                 Spacer()
                 Label("\(program.totalLength)", systemImage: "clock")

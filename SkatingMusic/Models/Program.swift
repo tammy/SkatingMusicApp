@@ -7,14 +7,15 @@
 
 import Foundation
 
-struct Program: Identifiable {
+struct Program: Identifiable, Codable {
     let id: UUID
     var title: String
-    var level: String
+    var label: String
     var leadInSeconds: Int
     var file: String
     var theme: Theme
-    var tags: [String]
+    var tags: [String] = []
+    var history: [History] = []
     
     var totalLength: String {
         return Duration.seconds(160)
@@ -30,28 +31,27 @@ struct Program: Identifiable {
         }
     }
     
-    init(id: UUID = UUID(), title: String, level: String, leadInSeconds: Int, file: String, theme: Theme, tags: [String] = []) {
+    init(id: UUID = UUID(), title: String, label: String, leadInSeconds: Int, file: String, theme: Theme) {
         self.id = id
         self.title = title
-        self.level = level
+        self.label = label
         self.leadInSeconds = leadInSeconds
         self.file = file
         self.theme = theme
-        self.tags = []
     }
 }
 
 extension Program {
     static var emptyProgram: Program {
-        Program(title: "", level: "", leadInSeconds: 0, file: "", theme: .sky)
+        Program(title: "", label: "", leadInSeconds: 0, file: "", theme: .sky)
     }
 }
 
 extension Program {
     static let sampleData: [Program] =
     [
-        Program(title: "White Night", level: "Adult Bronze", leadInSeconds: 3, file: "", theme: .periwinkle, tags: ["WIP"]),
-        Program(title: "Hustle and Bustle of Ormos", level: "Adult Pre-bronze", leadInSeconds: 5, file: "",  theme: .yellow, tags: ["Spring show", "loop"]),
-        Program(title: "Domineer", level: "Dance Pre-bronze", leadInSeconds: 10, file: "",  theme: .poppy)
+        Program(title: "White Night", label: "Adult Bronze", leadInSeconds: 3, file: "", theme: .periwinkle),
+        Program(title: "Hustle and Bustle of Ormos", label: "Adult Pre-bronze", leadInSeconds: 5, file: "",  theme: .yellow),
+        Program(title: "Domineer", label: "Dance Pre-bronze", leadInSeconds: 10, file: "",  theme: .poppy)
     ]
 }

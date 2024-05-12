@@ -9,11 +9,26 @@ import SwiftUI
 
 @main
 struct SkatingMusicApp: App {
-    @State private var programs = Program.sampleData
+    @StateObject private var store = ProgramStore()
     
     var body: some Scene {
         WindowGroup {
-            ListView(programs: $programs)
+            ProgramListView(programs: $store.programs) {
+                Task {
+                    do {
+                        try await store.save(programs: store.programs)
+                    } catch {
+                        fatalError(error.localizedDescription)
+                    }
+                }
+            }
+                .task {
+                    do {
+                        try await store.load()
+                    } catch {
+                        fatalError(error.localizedDescription)
+                    }
+                }
         }
     }
 }
