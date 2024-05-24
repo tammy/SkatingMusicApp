@@ -1,10 +1,3 @@
-//
-//  Theme.swift
-//  SkatingMusic
-//
-//  Created by Tammy Liu on 4/6/24.
-//
-
 import SwiftUI
 
 enum Theme: String, CaseIterable, Identifiable, Codable {

@@ -1,40 +1,38 @@
-//
-//  ProgramStore.swift
-//  SkatingMusic
-//
-//  Created by Tammy Liu on 4/14/24.
-//
-
 import SwiftUI
+import Combine
 
-@MainActor
 class ProgramStore: ObservableObject {
     @Published var programs: [Program] = []
     
-    private static func fileURL() throws -> URL {
-        try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("programs.data")
+    private var cancellables: Set<AnyCancellable> = []
+
+    init() {
+        loadPrograms()
     }
-    
-    func load() async throws {
-        let task = Task<[Program], Error> {
-            let fileURL = try Self.fileURL()
-            guard let data = try? Data(contentsOf: fileURL) else {
-                return []
+
+    func loadPrograms() {
+        if let data = UserDefaults.standard.data(forKey: "programs") {
+            if let decodedPrograms = try? JSONDecoder().decode([Program].self, from: data) {
+                self.programs = decodedPrograms
             }
-            let programs = try JSONDecoder().decode([Program].self, from: data)
-            return programs
         }
-        let programs = try await task.value
-        self.programs = programs
     }
-    
-    func save(programs: [Program]) async throws {
-        let task = Task {
-            let data = try JSONEncoder().encode(programs)
-            let outfile = try Self.fileURL()
-            try data.write(to: outfile)
+
+    func savePrograms() {
+        if let encodedPrograms = try? JSONEncoder().encode(programs) {
+            UserDefaults.standard.set(encodedPrograms, forKey: "programs")
         }
-        _ = try await task.value
+    }
+
+    func addProgram(_ program: Program) {
+        programs.append(program)
+        savePrograms()
+    }
+
+    func updateProgram(_ program: Program) {
+        if let index = programs.firstIndex(where: { $0.id == program.id }) {
+            programs[index] = program
+            savePrograms()
+        }
     }
 }
-

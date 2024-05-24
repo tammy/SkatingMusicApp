@@ -1,22 +1,19 @@
-//
-//  ThemeView.swift
-//  SkatingMusic
-//
-//  Created by Tammy Liu on 4/13/24.
-//
-
 import SwiftUI
 
 struct ThemeView: View {
     let theme: Theme
     
     var body: some View {
-        Text(theme.name)
-            .padding(4)
-            .frame(maxWidth: .infinity)
-            .background(theme.mainColor)
-            .foregroundColor(theme.accentColor)
-            .clipShape( RoundedRectangle(cornerRadius: 4))
+        HStack {
+            Circle()
+                .fill(theme.mainColor)
+                .frame(width: 20, height: 20)
+                .shadow(radius: 0) // Adds a shadow
+//            Spacer()
+            Text(theme.name)
+        }
+        .padding(4)
+        
     }
 }
 

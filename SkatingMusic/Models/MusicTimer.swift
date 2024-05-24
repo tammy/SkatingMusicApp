@@ -1,10 +1,3 @@
-//
-//  MusicTimer.swift
-//  SkatingMusic
-//
-//  Created by Tammy Liu on 4/13/24.
-//
-
 import Foundation
 
 @MainActor

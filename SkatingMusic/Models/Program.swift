@@ -1,57 +1,51 @@
-//
-//  Program.swift
-//  SkatingMusic
-//
-//  Created by Tammy Liu on 4/6/24.
-//
-
 import Foundation
+import AVFoundation
+
+enum LeadInType: Codable {
+    case none
+    case metronome
+}
 
 struct Program: Identifiable, Codable {
     let id: UUID
-    var title: String
-    var label: String
-    var leadInSeconds: Int
-    var file: String
-    var theme: Theme
-    var tags: [String] = []
-    var history: [History] = []
+    var name: String
+    var audioFileURL: URL
+    let duration: TimeInterval
+
+    // TODO: use these
+    var useLeadIn: Bool
+    var leadInType: LeadInType
+    var leadInDuration: TimeInterval
+//    var theme: Theme?
+//    var history: [History] = []
     
-    var totalLength: String {
-        return Duration.seconds(160)
-            .formatted(.time(pattern: . minuteSecond(padMinuteToLength: 2)))
-    }
-    
-    var leadInSecondsAsDouble: Double {
-        get {
-            Double(leadInSeconds)
-        }
-        set {
-            leadInSeconds = Int(newValue)
-        }
-    }
-    
-    init(id: UUID = UUID(), title: String, label: String, leadInSeconds: Int, file: String, theme: Theme) {
+    init(id: UUID = UUID(), name: String = "", audioFileURL: URL, duration: TimeInterval, useLeadIn: Bool = false, leadInType: LeadInType = LeadInType.none, leadInDuration: TimeInterval = 0) {
         self.id = id
-        self.title = title
-        self.label = label
-        self.leadInSeconds = leadInSeconds
-        self.file = file
-        self.theme = theme
+        self.name = name
+        self.audioFileURL = audioFileURL
+        self.duration = duration
+        self.useLeadIn = useLeadIn
+        self.leadInType = leadInType
+        self.leadInDuration = leadInDuration
+    }
+    
+    private func durationToString() -> String {
+        let minutes = Int(self.duration) / 60
+        let seconds = Int(self.duration) % 60
+        return String(format: "%02d:%02d", minutes, seconds)
     }
 }
 
 extension Program {
-    static var emptyProgram: Program {
-        Program(title: "", label: "", leadInSeconds: 0, file: "", theme: .sky)
-    }
-}
+    static func sampleData() -> [Program] {
+        let programURL1 = URL(fileURLWithPath: Bundle.main.path(forResource: "Hustle and Bustle of Ormos - Tammy’s Program", ofType: "mp3") ?? "")
+        let programURL2 = URL(fileURLWithPath: Bundle.main.path(forResource: "WHITE NIGHT", ofType: "mp3") ?? "")
+        let programURL3 = URL(fileURLWithPath: Bundle.main.path(forResource: "Domineer", ofType: "mp3") ?? "")
 
-extension Program {
-    static let sampleData: [Program] =
-    [
-        Program(title: "White Night", label: "Adult Bronze", leadInSeconds: 3, file: "", theme: .periwinkle),
-        Program(title: "Hustle and Bustle of Ormos", label: "Adult Pre-bronze", leadInSeconds: 5, file: "",  theme: .yellow),
-        Program(title: "Domineer", label: "Dance Pre-bronze", leadInSeconds: 10, file: "",  theme: .poppy)
-    ]
+        return [
+            Program(name: "Hustle and Bustle of Ormos", audioFileURL: programURL1, duration: 120, useLeadIn: true, leadInDuration: 5),
+            Program(name: "White Night", audioFileURL: programURL2, duration: 150, useLeadIn: true, leadInDuration: 10),
+            Program(name: "Domineer", audioFileURL: programURL3, duration: 180)
+        ]
+    }
 }

@@ -1,10 +1,3 @@
-//
-//  ThemePicker.swift
-//  SkatingMusic
-//
-//  Created by Tammy Liu on 4/13/24.
-//
-
 import SwiftUI
 
 struct ThemePicker: View {
@@ -13,11 +6,13 @@ struct ThemePicker: View {
     var body: some View {
         Picker("Theme", selection: $selection) {
             ForEach(Theme.allCases) { theme in
-                ThemeView(theme: theme)
-                    .tag(theme)
+                HStack {
+                    ThemeView(theme: theme)
+                        .tag(theme)
+                        .frame(width: 30)
+                }
             }
-        }
-        .pickerStyle(.navigationLink)
+        }.pickerStyle(.navigationLink)
     }
 }
 

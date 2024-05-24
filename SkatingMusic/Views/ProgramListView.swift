@@ -1,51 +1,56 @@
-//
-//  ListView.swift
-//  SkatingMusic
-//
-//  Created by Tammy Liu on 4/10/24.
-//
-
-// Continue from: https://developer.apple.com/tutorials/app-dev-training/persisting-data
-
-// and: https://developer.apple.com/documentation/swiftui/view/onchange(of:initial:_:)-8wgw9
-
 import SwiftUI
 
 struct ProgramListView: View {
     @Binding var programs: [Program]
-    @Environment(\.scenePhase) private var scenePhase
     @State private var isPresentingNewProgramView = false
-    
-    let saveAction: ()->Void
-    
+    @State private var programToEdit: Program?
+
     var body: some View {
         NavigationStack {
-            List($programs) { $p in
-                NavigationLink(destination: ProgramDetailView(program: $p)) {
-                    CardView(program: p)
-                }.listRowBackground(p.theme.mainColor)
-            }
-            .navigationTitle("Skating Music")
-            .toolbar {
-                Button(action: {
-                    isPresentingNewProgramView = true
-                }) {
-                    Image(systemName: "plus")
-                }
-                .accessibilityLabel("New program music")
-            }
+            listView
+                .navigationTitle("Skating Music")
+                .toolbar { addButton }
         }
         .sheet(isPresented: $isPresentingNewProgramView) {
-            NewProgramSheet(programs: $programs, isPresentingNewProgramView: $isPresentingNewProgramView)
+            NavigationView {
+                ProgramDetailEditView(programs: $programs, programToEdit: programToEdit)
+            }
         }
-        .onChange(of: scenePhase) { phase in
-            if phase == .inactive { saveAction() }
+    }
+
+    @ViewBuilder
+    var listView: some View {
+        if programs.isEmpty {
+            VStack {
+                Text("No programs yet. Create your first one!").padding(10)
+                Spacer()
+            }
+        } else {
+            programListView
         }
+    }
+
+    var programListView: some View {
+        List($programs) { $p in
+            NavigationLink(destination: ProgramDetailView(program: $p)) {
+                CardView(program: p)
+            }
+        }
+    }
+
+    var addButton: some View {
+        Button(action: {
+            programToEdit = nil
+            isPresentingNewProgramView = true
+        }) {
+            Image(systemName: "plus")
+        }
+        .accessibilityLabel("New program music")
     }
 }
 
 struct ProgramListView_Previews: PreviewProvider {
     static var previews: some View {
-        ProgramListView(programs: .constant(Program.sampleData), saveAction: {})
+        ProgramListView(programs: .constant(Program.sampleData()))
     }
 }

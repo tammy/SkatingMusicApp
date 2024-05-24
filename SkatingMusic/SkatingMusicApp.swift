@@ -1,33 +1,20 @@
-//
-//  SkatingMusicApp.swift
-//  SkatingMusic
-//
-//  Created by Tammy Liu on 4/4/24.
-//
-
 import SwiftUI
 
 @main
 struct SkatingMusicApp: App {
     @StateObject private var store = ProgramStore()
-    
+    @State private var errorWrapper: ErrorWrapper?
+
     var body: some Scene {
         WindowGroup {
-            ProgramListView(programs: $store.programs) {
-                Task {
-                    do {
-                        try await store.save(programs: store.programs)
-                    } catch {
-                        fatalError(error.localizedDescription)
-                    }
+            ProgramListView(programs: $store.programs)
+                .onAppear {
+                    store.loadPrograms()
                 }
-            }
-                .task {
-                    do {
-                        try await store.load()
-                    } catch {
-                        fatalError(error.localizedDescription)
-                    }
+                .sheet(item: $errorWrapper, onDismiss: {
+                    store.programs = []
+                }) { wrapper in
+                    ErrorView(errorWrapper: wrapper)
                 }
         }
     }
